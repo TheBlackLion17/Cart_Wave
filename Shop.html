@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="row.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.jpg" alt="Company Logo">
+                <h1>CART WAVE</h1>
+            </div>
+        <h1>Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Shop.html">About</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+    <section id="products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="row">
+                <div class="product">
+                    <div class="preview">
+                        <img src="imported_shoues/shopes1.jpg" alt="Product 1 Preview">
+                    </div>
+                    <div class="details">
+                        <h3>IMPORTED SHOES</h3>
+                        <p>Description:Sizes : 6-7-8-9-10 Quality 7@
+                            Shipping Free To Kerala 
+                            2 -3 Working Days Delivery To Kerala .</p>
+                        <p>Price:  ₹1399</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                        <button class="buy-btn" onclick="sendWhatsAppMessage('IMPORTED SHOES ', 'https://telegra.ph/file/7aa65e093ac5f68d09c49.jpg', 'Price:₹1399')">Buy</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Add more rows for each product below -->
+            
+            <div class="row">
+                <div class="product">
+                    <div class="preview">
+                        <img src="smart_watch/black2.jpg" alt="Product 2 Preview">
+                    </div>
+                    <div class="details">
+                        <h3> APPLE SMARTWATCH  T800 ULTRA</h3>
+                        <p>1.99 Infinite Full Touch Screen And Zinc Alloy Appearance Material Aluminum Case
+                        </p>
+                        <p>Price: ₹599</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                        <button class="buy-btn" onclick="sendWhatsAppMessage('APPLE SMARTWATCH T800 ULTRA','https://telegra.ph/file/af28b41c0ec9bf8a9bde7.jpg','Price:₹599')">Buy</button>
+
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Add more rows for each product below -->
+            
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Shop Page</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+    <form id="comment-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="username">Telegram Username:</label>
+        <input type="text" id="username" name="username" placeholder="@username" required><br>
+        <label for="comment">Comment:</label><br>
+        <textarea id="comment" name="comment" rows="4" required></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+    
+    <script src="comment.js"></script>
+
+    <script src="styles.js"></script>
+    <script src="buy.js"></script>
+    
+
+</body>
+</html>

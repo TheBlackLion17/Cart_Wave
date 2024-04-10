@@ -1,0 +1,284 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background: #ffdd00;
+    color: #000000;
+    padding: 20px 0;
+    font-family: "Audiowide", sans-serif;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px; /* Optional: Adjust spacing between logo and navigation */
+}
+
+.logo img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 80px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.logo h1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px; /* Adjust spacing between logo and company name */
+}
+
+
+header h1 {
+    margin: 0;
+}
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+#hero {
+    background: #ffffff00;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#hero h2 {
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #ffdd00;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #ffdd00;
+}
+
+#products {
+    background: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#products h2 {
+    margin-bottom: 50px;
+}
+
+.product {
+    display: inline-block;
+    margin: 0 20px;
+    margin-bottom: 50px; 
+}
+
+.product img {
+    max-width: 500px;
+    height: 500px;
+}
+
+.product h3 {
+    margin-top: 10px;
+}
+
+.product p {
+    font-weight: bold;
+}
+
+footer {
+    background: #ffdd00;
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer ul li:last-child {
+    margin-right: 0;
+}
+
+footer ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+/* Styles for slideshow */
+.slideshow-container {
+    position:relative;
+    max-width: 80%;
+    margin-bottom: 10px;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+}
+
+.prev, .next {
+    position: absolute;
+    bottom: 10px; /* Change top to bottom */
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 50%; /* Adjust horizontal positioning if needed */
+    transform: translateX(-50%);
+}
+
+.next {
+    right: 50%; /* Adjust horizontal positioning if needed */
+    transform: translateX(50%);
+}
+
+
+.fade {
+    animation: fade 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+
+.btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #000000;
+}
+.menu-btn {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+    
+    .nav-links {
+        display: none;
+        margin-top: 10px;
+    }
+    
+    .nav-links.active {
+        display: block;
+    }
+}
+.add-to-cart-btn {
+    background-color: #007bff; /* Change button background color */
+    color: #fff; /* Change button text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #0056b3; /* Change button background color on hover */
+}
+
+.buy-btn {
+    background-color: #007bff; /* Change button background color */
+    color: #fff; /* Change button text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover{
+    background-color: #0056b3; /* Change button background color on hover */
+}
+.Shop-btn {
+    background-color: #020202; /* Change button background color */
+    color: #fff; /* Change button text color */
+    border: none;
+    padding: 20px 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.Shop-btn:hover{
+    background-color: #ffd500; /* Change button background color on hover */
+}
+.For-btn {
+    background-color: #cc00ff; /* Change button background color */
+    color: #fff; /* Change button text color */
+    border: none;
+    padding: 20px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.For-btn:hover{
+    background-color: #ff0000; /* Change button background color on hover */
+}

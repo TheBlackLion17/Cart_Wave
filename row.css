@@ -1,0 +1,34 @@
+.row {
+    display: flex;
+    margin-bottom: 20px; /* Adjust spacing between rows */
+    border-bottom: 1px solid #000000; /* Add margin line */
+    padding-bottom: 20px; /* Add padding to separate rows visually */
+}
+
+
+.product {
+    display: flex;
+    width: 100%;
+}
+
+.preview {
+    flex: 0 0 100px; /* Set the product image column to a fixed width */
+    margin-right: 100px; /* Adjust spacing between image and details */
+}
+
+.preview img {
+    max-width: 150%;
+    height: 100%;
+}
+
+.details {
+    flex: 1; /* Allow the details column to take up remaining space */
+}
+
+.details h3 {
+    margin-top: 0; /* Remove default margin for heading */
+}
+
+.details p {
+    margin: 0 0 10px; /* Adjust spacing between details */
+}
