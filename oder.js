@@ -22,7 +22,7 @@ document.getElementById('multi-step-form').addEventListener('submit', function(e
 
 function sendToTelegram(data) {
     // Form your message with the data
-    var message = `New order received!\nName: ${data.name}\nAddress: ${data.address}\nPincode: ${data.pincode}\nNumber: ${data.number}\nCode: ${data.code}\nProdect: ${data.prodect}\nPrice: ${data.price}\nUrl: ${data.url}`;
+    var message = `New order received!\nName: ${data.name}\nAddress: ${data.address}\nPincode: ${data.pincode}\nNumber: ${data.number}\nCode: ${data.code}\nColour: ${data.colour}\nPrice: ${data.price}\nUrl: ${data.url}`;
 
     // Replace 'YOUR_TELEGRAM_BOT_TOKEN' and 'YOUR_CHAT_ID' with your actual bot token and chat ID
     var telegramUrl = `https://api.telegram.org/bot6764235697:AAFw3YnDOML69FqBTvsWKxnZ2WXmS2xCMQ0/sendMessage?chat_id=@cart_wave&text=${encodeURIComponent(message)}`;
